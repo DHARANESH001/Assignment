@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=;, initial-scale=1.0">
+        <title>APPLICATION</title>
+    </head>
+    <style>
+        .center{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+    <body>
+        <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; text-align:center;"> Job Application Form</h1>
+        <div class="center">
+        <form>
+            <label>First Name:</label><input type="text" placeholder="Enter First Name" required></br></br>
+            <label>Last  Name:</label><input type="text" placeholder="Enter Last Name" required></br></br>
+            <label>Password&nbsp;&nbsp;:</label><input type="Password" placeholder="Enter Password" required></br><br>
+            <label>DateofBirth:</label><input type="date"></br><br>
+            <label>Gender:</label><input type="radio"  name="Gender" value="Male">Male
+            <input type="radio"  name="Gender" value="Female">Female</br><br>
+            <label>Phone Number</label><input type="number" placeholder="Enter phone number" required></br></br>
+            <label>Email:</label><input type="email"></br><br>
+            <label>Language:</label><input type="checkbox" name="language" value="C">C
+            <input type="checkbox" name="language" value="C++">C++
+            <input type="checkbox"  name="language" value="Java">Java </br><br>
+            <label>Department:</label><select name="dept">
+                <option name="dept" value="Ece">Ece</option>option>
+                <option name="dept" value="Cse">Cse</option>option>
+                <option name="dept" value="Eee">Eee</option>option>
+            </select></br><br>
+            <label>Upload Resume:</label><input type="file"></br><br>
+           <label><input type="button" value="Sumbit">
+            <input type="Reset" value="Reset">
+           </label>
+        </form>
+        </div>
+    </body>
+</html>
