@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newspaper Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        nav {
+            background-color: aqua;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            background-color: white;
+            text-decoration: underline;
+            border-radius: 5px;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        h4 {
+            background-color: beige;
+            margin: 20px 0 10px;
+            padding: 5px;
+            font-size: 1.2em;
+        }
+
+        .content {
+            column-count: 2; /* Creates two columns */
+            column-gap: 20px; /* Adds space between columns */
+        }
+
+        p {
+            margin-bottom: 1em;
+            text-align: justify; /* Aligns text like in newspapers */
+        }
+    </style>
+</head>
+<body>
+    <nav class="sticky">
+        <a href="#about">About</a>
+        <a href="#hi">Hi</a>
+        <a href="#hello">Hello</a>
+    </nav>
+    <div class="content">
+        <h4>The standard Lorem Ipsum passage, used since the 1500s</h4>
+        <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum."
+        </p>
+        <h4>Section 1.10.32 of "de Finibus Bonorum et Malorum"</h4>
+        <p>
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+            illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+            explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+            odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+            voluptatem sequi nesciunt."
+        </p>
+        <h4>Hi</h4>
+        <p>
+            "But I must explain to you how all this mistaken idea of denouncing
+            pleasure and praising pain was born and I will give you a complete
+            account of the system, and expound the actual teachings of the great
+            explorer of the truth."
+        </p>
+        <h4>Hello</h4>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent varius
+            nunc vitae finibus commodo. Aliquam cursus lacinia nulla. In turpis
+            magna, pharetra vel lacinia vel, porta non risus. Maecenas neque mi,
+            commodo nec molestie vitae, dignissim ac mauris.
+        </p>
+        <h4>1914 translation by H. Rackham</h4>
+        <p>
+            "On the other hand, we denounce with righteous indignation and dislike
+            men who are so beguiled and demoralized by the charms of pleasure of the
+            moment, so blinded by desire, that they cannot foresee the pain and
+            trouble that are bound to ensue."
+        </p>
+    </div>
+</body>
+</html>
