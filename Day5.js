@@ -63,5 +63,15 @@ console.log("Pattern printing");
 for(i=1;i<=5;i++){
     console.log("*".repeat(i));
 }
+
 let abc = (x,y)=>(x+y);
 console.log(abc(1,3));
+function abc(x,y){
+    console.log(x+y);
+}
+abc(2,2);
+
+function abc(name,company){
+    console.log("hi "+ name +"  welcome to "+company);
+}
+abc("dharanesh","tcs");
