@@ -4,13 +4,12 @@ const App = () => {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
-  // Play the video
   const handlePlay = () => {
     videoRef.current.play();
     setIsPlaying(true);
   };
 
-  // Pause the video
+
   const handlePause = () => {
     videoRef.current.pause();
     setIsPlaying(false);
@@ -20,7 +19,7 @@ const App = () => {
     <div style={styles.container}>
       <h1 style={styles.heading}>React Video Player</h1>
 
-      {/* Video Player */}
+      {}
       <video
         ref={videoRef}
         width="100%"
@@ -31,7 +30,7 @@ const App = () => {
         Your browser does not support the video tag.
       </video>
 
-      {/* Play and Pause Buttons */}
+      {}
       <div style={styles.controls}>
         <button style={styles.button} onClick={handlePlay} disabled={isPlaying}>
           Play
@@ -44,7 +43,7 @@ const App = () => {
   );
 };
 
-// Inline styles for simplicity
+
 const styles = {
   container: {
     maxWidth: "800px",
